@@ -5,3 +5,6 @@
       dest: '{{ docker_compose_executable }}'
       mode: 0755
 
+- include_tasks: install-python-package.yml
+  when: docker_compose_install_python_package
+
