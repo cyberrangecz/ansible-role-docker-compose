@@ -1,6 +1,6 @@
 galaxy_info:
   role_name: docker-compose
-  author: Kamil Andoniadis
+  author: KYPO Team
   description: Role for setting up docker-compose
   company: Masaryk university
   min_ansible_version: 2.8.2
