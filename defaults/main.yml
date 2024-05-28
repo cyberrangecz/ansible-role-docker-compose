@@ -1,5 +1,0 @@
----
-
-docker_compose_executable: /usr/local/bin/docker-compose
-docker_compose_install_python_package: True
-

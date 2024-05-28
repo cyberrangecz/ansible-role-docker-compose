@@ -1,10 +1,7 @@
+---
 
-- name: install docker compose
-  get_url:
-      url: 'https://github.com/docker/compose/releases/download/1.27.4/docker-compose-{{ ansible_system }}-{{ ansible_machine }}'
-      dest: '{{ docker_compose_executable }}'
-      mode: 0755
-
-- include_tasks: install-python-package.yml
-  when: docker_compose_install_python_package
-
+- name: install docker compose plugin
+  apt:
+    name:
+      - docker-compose-plugin
+    update_cache: yes
